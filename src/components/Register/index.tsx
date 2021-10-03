@@ -1,6 +1,8 @@
 import { NextPage } from "next";
 import style from "./style.module.scss";
 import Input from "components/Input";
+import Image from "next/image";
+import image from 'public/img/image.svg'
 
 const Register: NextPage = () => {
   return (
@@ -13,9 +15,12 @@ const Register: NextPage = () => {
       />
       <div className={style.content}>
         <div className={style.contentLeft}>
-          <img
-            src="https://res.cloudinary.com/dazqbqhdf/image/upload/v1633284438/image_npepgb.svg"
+          <Image
+            src={image}
             alt="Imagem de crianças jogando"
+            width={576}
+            height={700}
+            priority={true}
           />
         </div>
         <div className={style.contentRight}>

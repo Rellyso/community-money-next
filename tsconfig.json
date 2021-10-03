@@ -8,6 +8,10 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "baseUrl": "./src",
+    "paths": {
+      "components/*": ["components/*"],
+      "public/*": ["../public/*"]
+    },
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",

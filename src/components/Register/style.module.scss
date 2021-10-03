@@ -9,12 +9,12 @@ $max-height: 700px;
   row-gap: 1rem;
 
   .content {
-    max-width: 1300px;
+    max-width: 1154px;
     max-height: $max-height;
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 0.3fr 0.7fr;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
 
     .contentLeft {
