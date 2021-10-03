@@ -3,10 +3,12 @@
   height: 100%;
   justify-items: center;
   align-items: center;
+  padding: 1rem;
+  grid-template-rows: 0.1fr 1fr;
 
   .content {
     max-width: 1031px;
-    max-height: 380px;
+    max-height: 580px;
     width: 100%;
     height: 100%;
     display: grid;
@@ -28,59 +30,66 @@
       display: grid;
       padding: 1rem 6vw;
 
-      & .form {
+      .main {
         display: grid;
+        max-height: 396px;
+        align-self: center;
         row-gap: 1rem;
-        color: #3a29a0;
-        max-height: 192px;
 
-        & input {
-          background: #fbfbfb;
-          border: 1px solid rgba(58, 41, 160, 0.5);
-          box-sizing: border-box;
-          border-radius: 20px;
-          outline: none;
-          padding-left: 0.8rem;
-          height: 2.6rem;
-          color: inherit;
-        }
+        & .form {
+          display: grid;
+          row-gap: 1rem;
+          color: #3a29a0;
+          max-height: 204px;
 
-        & button {
-          background: #3a29a0;
-          border: none;
-          border-radius: 20px;
-          color: #fff;
-          padding: 0.9rem 1rem;
-
-          &:hover {
-            cursor: pointer;
-            background-color: #fff;
-            color: #3a29a0;
-            border: 1px solid #3a29a0;
+          & input {
+            background: #fbfbfb;
+            border: 1px solid rgba(58, 41, 160, 0.5);
+            box-sizing: border-box;
+            border-radius: 20px;
+            outline: none;
+            padding-left: 0.8rem;
+            height: 2.6rem;
+            color: inherit;
           }
 
-          &:active {
-            border-style: outset;
+          & button {
+            background: #3a29a0;
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+            padding: 0.9rem 1rem;
+
+            &:hover {
+              cursor: pointer;
+              background-color: #fff;
+              color: #3a29a0;
+              border: 1px solid #3a29a0;
+            }
+
+            &:active {
+              border-style: outset;
+            }
           }
         }
-      }
 
-      & .h3 {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 1.5rem;
-        text-align: center;
-      }
+        & .h3 {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 1.5rem;
+          text-align: center;
+        }
 
-      & .line {
-        width: 100%;
-        height: 1px;
-        margin-top: 1rem;
-        background-color: rgba(58, 41, 160, 0.4);
-      }
+        & .line {
+          width: 100%;
+          height: 1px;
+          margin-top: 1rem;
+          background-color: rgba(58, 41, 160, 0.4);
+        }
 
-      & p {
-        text-align: center;
+        & p {
+          text-align: center;
+        }
       }
     }
 
@@ -101,7 +110,7 @@
 
   .arrow {
     justify-self: start;
-    margin-left: 2.5rem;
+    margin-left: 1rem;
     height: 25px;
 
     &:hover {
