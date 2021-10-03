@@ -13,7 +13,10 @@ const Register: NextPage = () => {
       />
       <div className={style.content}>
         <div className={style.contentLeft}>
-          <img src="../img/image.svg" alt="Imagem de crianças jogando" />
+          <img
+            src="https://res.cloudinary.com/dazqbqhdf/image/upload/v1633284438/image_npepgb.svg"
+            alt="Imagem de crianças jogando"
+          />
         </div>
         <div className={style.contentRight}>
           <img src="../img/logo2.svg" alt="Segunda logo" />
@@ -26,11 +29,15 @@ const Register: NextPage = () => {
           </div>
           <form className={style.form}>
             <Input type="text" placeholder="Seu nome" />
-            <Input type="text" placeholder="CPF"/>
-            <Input type="email" placeholder="Email"/>
-            <Input type="date" placeholder="Data de Nascimento" style={{ padding: '0 1rem 0 1rem' }}/>
-            <Input type="password" placeholder="Senha"/>
-            <Input type="password" placeholder="Digite a senha novamente"/>
+            <Input type="text" placeholder="CPF" />
+            <Input type="email" placeholder="Email" />
+            <Input
+              type="date"
+              placeholder="Data de Nascimento"
+              style={{ padding: "0 1rem 0 1rem" }}
+            />
+            <Input type="password" placeholder="Senha" />
+            <Input type="password" placeholder="Digite a senha novamente" />
           </form>
           <div className={style.terms}>
             <label htmlFor="">
@@ -43,7 +50,9 @@ const Register: NextPage = () => {
               pessoas possam visualizar
             </label>
           </div>
-          <button className={style.submit} type="submit">Finalizar cadastro</button>
+          <button className={style.submit} type="submit">
+            Finalizar cadastro
+          </button>
         </div>
       </div>
     </div>
