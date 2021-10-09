@@ -27,7 +27,7 @@ const Register: NextPage = () => {
           <img src="../img/logo2.svg" alt="Segunda logo" />
           <div className={style.info}>
             <p>
-              <strong>Cadatre-se</strong>
+              <strong>Cadastre-se</strong>
             </p>
             <p>Preencha os campos abaixo</p>
             <p>Seus dados estão seguros no Community Money</p>
@@ -45,12 +45,19 @@ const Register: NextPage = () => {
             <Input type="password" placeholder="Digite a senha novamente" />
           </form>
           <div className={style.terms}>
-            <label htmlFor="">
-              <Input type="checkbox" />
+            <label
+              className="form-check-label"
+              htmlFor="gridRadios1"
+            >
+              <input type="checkbox" className="form-check-input" id="gridRadios1" />
               Concordo com os termos de privacidade
             </label>
-            <label htmlFor="">
-              <Input type="checkbox" />
+            <label className="form-check-label" htmlFor="gridRadios2">
+              <input
+                type="checkbox"
+                className="form-check-input"
+                id="gridRadios2"
+              />
               Você concordaria em deixar sua imagem pública para que outras
               pessoas possam visualizar
             </label>

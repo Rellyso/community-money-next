@@ -1,4 +1,5 @@
 $max-height: 700px;
+$max-width: 80%;
 
 .container {
   display: grid;
@@ -39,6 +40,7 @@ $max-height: 700px;
 
       .info {
         p {
+          margin: 0;
           font-size: 0.9rem;
           text-align: center;
         }
@@ -47,19 +49,20 @@ $max-height: 700px;
       .form {
         display: grid;
         row-gap: 1rem;
-        width: 70%;
+        width: $max-width;
         max-height: 330px;
 
-        input::placeholder {
+        input::placeholder,
+        input {
           color: #3a29a0;
         }
       }
 
       .terms {
-        width: 70%;
+        width: $max-width;
+        display: grid;
+        row-gap: 0.5rem;
         label {
-          display: flex;
-          align-items: center;
           font-size: 0.8rem;
 
           input {
@@ -73,7 +76,7 @@ $max-height: 700px;
         background: #3a29a0;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
-        width: 70%;
+        width: $max-width;
 
         background: #3a29a0;
         border: none;
@@ -106,7 +109,7 @@ $max-height: 700px;
           border-radius: 0.9rem;
 
           .form {
-              width: 100%;
+            width: 100%;
           }
         }
       }

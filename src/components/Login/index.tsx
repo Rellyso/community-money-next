@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import Link from "next/link";
 import style from "./style.module.scss";
+import Input from "components/Input";
 
 const Login: NextPage = () => {
   return (
@@ -20,8 +21,8 @@ const Login: NextPage = () => {
           <div className={style.main}>
             <h3 className={style.h3}>Entrar</h3>
             <form className={style.form}>
-              <input type="text" placeholder="CPF" />
-              <input type="password" placeholder="Senha" />
+              <Input type="text" placeholder="CPF" />
+              <Input type="password" placeholder="Senha" />
               <a href="#">Esquceu a senha?</a>
               <button type="submit">Entrar</button>
             </form>

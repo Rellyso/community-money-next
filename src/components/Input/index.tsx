@@ -5,7 +5,7 @@ import style from "./style.module.scss";
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {}
 
 const Input: NextPage<InputProps> = (props) => {
-  return <input className={style.input} {...props} />;
+  return <input className={`${style.input} form-control`} {...props} />;
 };
 
 export default Input;
