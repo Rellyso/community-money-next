@@ -42,13 +42,13 @@ const Footer: NextPage = () => {
       </div>
       <div className={style.contentInput}>
         <Input placeholder="Email@example.com" />
-        <div className="input-group">
+        <div className={style.inputGroup}>
           <Input placeholder="Por favor resuma porque entrar em contato" />
-          <div className={`${style.groupInput} input-group-append `}>
-            <button className="btn btn-outline-secondary" type="button">
+          <div className="input-group-append">
+            <button className="btn" type="button">
               <Image
                 width={23}
-                height={27}
+                height={23}
                 className={style.arrowButton}
                 src={arrowSend}
                 alt="Flecha de envio"
