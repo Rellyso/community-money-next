@@ -10,55 +10,55 @@ import {
   youtube,
   instagram,
   arrowSend
-} from "./img";
+} from "../../img";
 
-const Footer: NextPage = () => {
+export const Footer: NextPage = () => {
   return (
-    <div className={style.container}>
-      <div className={style.contentLogo}>
-        <Image
-          src={minLogo}
-          draggable={false}
-          alt="Mini logo da Commnunity Money"
-        />
-        <Image src={logoUfersa} draggable={false} alt="Logo da ufersa" />
-      </div>
-      <div className={style.contentInfo}>
-        <div className={style.contentLeft}>
-          <p>Quem somos?</p>
-          <p>Dúvidas frequentes</p>
-          <p>Políticas de privacidade</p>
+    <footer className={style.container}>
+      <div className={style.contentWrapper}>
+        <div className={style.contentLogo}>
+          <Image
+            src={minLogo}
+            draggable={false}
+            alt="Mini logo da Commnunity Money"
+          />
+          <Image src={logoUfersa} draggable={false} alt="Logo da ufersa" />
         </div>
-        <div className={style.contentRight}>
-          <p>Siga nossas redes sociais</p>
-          <div className={style.socialNetworks}>
-            <Image src={linkedin} alt="Logo do Linkedin" />
-            <Image src={twitter} alt="Logo do Twitter" />
-            <Image src={youtube} alt="Logo do Youtube" />
-            <Image src={instagram} alt="Logo do Instagram" />
+        <div className={style.contentInfo}>
+          <div className={style.contentLeft}>
+            <p>Quem somos?</p>
+            <p>Dúvidas frequentes</p>
+            <p>Políticas de privacidade</p>
           </div>
-          <p>Grupo DevelopersAvengersWEB</p>
-        </div>
-      </div>
-      <div className={style.contentInput}>
-        <Input placeholder="Email@example.com" />
-        <div className={style.inputGroup}>
-          <Input placeholder="Por favor resuma porque entrar em contato" />
-          <div className="input-group-append">
-            <button className="btn" type="button">
-              <Image
-                width={23}
-                height={23}
-                className={style.arrowButton}
-                src={arrowSend}
-                alt="Flecha de envio"
-              />
-            </button>
+          <div className={style.contentRight}>
+            <p>Siga nossas redes sociais</p>
+            <div className={style.socialNetworks}>
+              <Image src={linkedin} alt="Logo do Linkedin" />
+              <Image src={twitter} alt="Logo do Twitter" />
+              <Image src={youtube} alt="Logo do Youtube" />
+              <Image src={instagram} alt="Logo do Instagram" />
+            </div>
+            <p>Grupo DevelopersAvengersWEB</p>
           </div>
         </div>
+        <div className={style.contentInput}>
+          <Input placeholder="Email@example.com" />
+          <div className={style.inputGroup}>
+            <Input placeholder="Por favor resuma porque entrar em contato" />
+            <div className="input-group-append">
+              <button className="btn" type="button">
+                <Image
+                  width={23}
+                  height={23}
+                  className={style.arrowButton}
+                  src={arrowSend}
+                  alt="Flecha de envio"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 };
-
-export default Footer;

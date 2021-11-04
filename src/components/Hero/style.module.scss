@@ -1,0 +1,51 @@
+.hero {
+  height: 695px;
+  width: calc(100vw - (100vw - 100%));
+  background: url(../../../public/img/imagem-fundo-1.png) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(270deg, rgba(58, 41, 160, 0.2) 33.65%, rgba(58, 41, 160, 0.85) 57.35%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  .heroContainer {
+    width: 557px;
+
+    color: white;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-family: Roboto;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 42px;
+    }
+
+    p {
+      padding-top: 16px;
+
+      font-family: Roboto;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 28px;
+    }
+  }
+}

@@ -1,10 +1,13 @@
-import type { NextPage } from "next";
+import { HTMLAttributes } from "react";
 import style from "./style.module.scss";
 
-const Button: NextPage = () => {
+type Props = HTMLAttributes<HTMLAnchorElement>;
+
+const Button = ({ ...rest }: Props) => {
   return (
-    <div className={style.container}>
-    </div>
+    <a {...rest} className={style.button}>
+      {rest.children}
+    </a>
   );
 };
 
