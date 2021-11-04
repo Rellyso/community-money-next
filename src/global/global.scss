@@ -7,11 +7,18 @@
 
 body,
 #__next {
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template-rows: 1fr .4fr;
+  min-height: 100vh;
+  width: calc(100vw - (100vw - 100%));
+  overflow-x: hidden;
+
   overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  > footer {
+    margin-top: auto;
+  }
 }
 
 a {
